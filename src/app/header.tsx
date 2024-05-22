@@ -3,8 +3,8 @@ import { OrganizationSwitcher, SignInButton, SignedOut, UserButton } from "@cler
 
 export function Header() {
     return (
-        <div className="border-b py-4 bg-gray-50">
-            <div className="container mx-auto justify-between flex">
+        <div className="relative z-10 border-b py-4 bg-gray-50">
+            <div className="items-center container mx-auto justify-between flex">
                 <div>Hello Sky-Drive</div>
                 <div className="flex gap-2">
                     <OrganizationSwitcher />

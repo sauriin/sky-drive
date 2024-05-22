@@ -21,13 +21,14 @@ import {
     AlertDialogHeader,
     AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
-import { Doc } from "../../convex/_generated/dataModel"
+import { Doc, Id } from "../../convex/_generated/dataModel"
 import { Button } from "@/components/ui/button"
-import { MoreVertical, TrashIcon } from "lucide-react"
-import { useState } from "react"
+import { FileTextIcon, GanttChartIcon, ImageIcon, MoreVertical, TrashIcon } from "lucide-react"
+import { ReactNode, useState } from "react"
 import { useMutation } from "convex/react"
 import { api } from "../../convex/_generated/api"
 import { useToast } from "@/components/ui/use-toast"
+import Image from "next/image"
 
 
 function FileCardActions({ file }: { file: Doc<"files"> }) {
@@ -76,17 +77,39 @@ function FileCardActions({ file }: { file: Doc<"files"> }) {
     )
 }
 
+function getFileUrl(fileId: Id<"_storage">): string {
+    return `${process.env.NEXT_PUBLIC_CONVEX_URL}/api/storage/${fileId}`
+}
+
 export function FileCard({ file }: { file: Doc<"files"> }) {
+
+    const typeIcons = {
+        'image': <ImageIcon />,
+        'pdf': <FileTextIcon />,
+        'csv': <GanttChartIcon />,
+    } as Record<Doc<"files">['type'], ReactNode>
+
     return (
         <Card>
             <CardHeader className="relative">
-                <CardTitle>{file.name}</CardTitle>
+                <CardTitle className="flex gap-2">
+                    <div className="flex justify-center">{typeIcons[file.type]}</div>
+                    {file.name}
+                </CardTitle>
                 <div className="absolute top-2 right-2">
                     <FileCardActions file={file} />
                 </div>
             </CardHeader>
             <CardContent>
-                <p>Card Content</p>
+                {
+                    file.type === 'image' && (
+                        <Image
+                            alt={file.name}
+                            width='200'
+                            height='200'
+                            src={getFileUrl(file.fileId)}
+                        />
+                    )}
             </CardContent>
             <CardFooter>
                 <Button>Download</Button>
