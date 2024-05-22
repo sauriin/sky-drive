@@ -1,32 +1,33 @@
-
 # Sky Drive
 
 SkyDrive is a secure and user-friendly cloud storage application built with cutting-edge technologies.
 
 ## Key Features
 
-* Modern Tech Stack: Developed using Next.js, Tailwind CSS, TypeScript, and Shadcn UI library, SkyDrive delivers a performant, scalable, and visually appealing experience.
+- Modern Tech Stack: Developed using Next.js, Tailwind CSS, TypeScript, and Shadcn UI library, SkyDrive delivers a performant, scalable, and visually appealing experience.
 
-* Modern Tech Stack: Developed using Next.js, Tailwind CSS, TypeScript, and Shadcn UI library, SkyDrive delivers a performant, scalable, and visually appealing experience.
+- Modern Tech Stack: Developed using Next.js, Tailwind CSS, TypeScript, and Shadcn UI library, SkyDrive delivers a performant, scalable, and visually appealing experience.
 
-* Seamless Uploads & Downloads: Effortlessly upload and download your files with a user-friendly interface.
+- Seamless Uploads & Downloads: Effortlessly upload and download your files with a user-friendly interface.
 
-* Secure File Storage: Rest assured knowing your data is protected with robust security measures powered by Convex, a serverless backend platform.
+- Secure File Storage: Rest assured knowing your data is protected with robust security measures powered by Convex, a serverless backend platform.
 
-* Intuitive Management: Organize and manage your files efficiently with SkyDrive's intuitive file management system. 
+- Intuitive Management: Organize and manage your files efficiently with SkyDrive's intuitive file management system.
+
 ## Built with the following technologies:
 
-* Next.js: A modern React framework for building fast and scalable web applications.
+- Next.js: A modern React framework for building fast and scalable web applications.
 
-* Tailwind CSS: A utility-first CSS framework for rapid and responsive UI development.
+- Tailwind CSS: A utility-first CSS framework for rapid and responsive UI development.
 
-* TypeScript: A superset of JavaScript that adds optional static typing for improved code maintainability and developer experience.
+- TypeScript: A superset of JavaScript that adds optional static typing for improved code maintainability and developer experience.
 
-* Shadcn UI: A component library providing pre-built UI elements for a consistent and beautiful user interface.
+- Shadcn UI: A component library providing pre-built UI elements for a consistent and beautiful user interface.
 
-* Convex: SkyDrive leverages Convex, a serverless backend platform, for secure and scalable data storage and management. Convex streamlines development, allowing us to focus on delivering a fantastic user experience.
+- Convex: SkyDrive leverages Convex, a serverless backend platform, for secure and scalable data storage and management. Convex streamlines development, allowing us to focus on delivering a fantastic user experience.
 
-* Clerk: User authentication is handled seamlessly with Clerk, a robust authentication platform offering features like passwordless logins and social login integration. Clerk ensures a secure and convenient login experience for SkyDrive users.
+- Clerk: User authentication is handled seamlessly with Clerk, a robust authentication platform offering features like passwordless logins and social login integration. Clerk ensures a secure and convenient login experience for SkyDrive users.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # Getting Started
